@@ -1,0 +1,45 @@
+//Setup
+> npm init -y
+
+//Rename index.js to server.js in package.json
+
+//Download packages and add them to package.json and creates a lock file(package-lock.json)
+> npm i express ejs express-ejs-layouts
+
+//Save as a development dependency, nodemon allows automatic restart and refresh server everytime we make any changes
+> npm i --save-dev nodemon 
+
+
+//In the package.json add scripts"
+// "start": "node server.js",
+// "devStart": "nodemon server.js"
+
+//Add a file server.js and export packages, configure app and port
+//Run the app
+> npm run devStart
+
+
+//Routes=controller in routes folder
+
+//Install the library for mongodb
+> npm i mongoose
+
+//Install local env library
+> npm i --save-dev dotenv
+
+---------MONGO DB------------
+C:\Program Files\MongoDB\Server\4.2\bin
+open mongo.exe
+> show databases
+> use newDb
+switched to db newDb
+> db.items.insert({name: "name"})
+WriteResult({ "nInserted" : 1 })
+> db.items.find()
+{ "_id" : ObjectId("5f1131051170c0652bd927ca"), "name" : "name" }
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+newDb   0.000GB
+
